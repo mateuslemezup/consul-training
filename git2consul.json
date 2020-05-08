@@ -10,7 +10,10 @@
   "repos" : [{
     "name" : "consul-training",
     "url" : "git@github.com:mateuslemezup/consul-training.git",
+    "ignore_repo_name": true,
     "ignore_file_extension": true,
+    "include_branch_name" : false,
+    "source_root": "properties",
     "branches" : ["master"],
     "hooks": [{
       "type" : "polling",
