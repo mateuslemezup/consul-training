@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "logger" : {
+    "name" : "git2consul",
+    "streams" : [{
+      "level": "trace",
+      "stream": "process.stdout"
+    }]
+  },
+  "repos" : [{
+    "name" : "consul-training",
+    "url" : "git@github.com:mateuslemezup/consul-training.git",
+    "ignore_file_extension": true,
+    "branches" : ["master"],
+    "hooks": [{
+      "type" : "polling",
+      "interval" : "1"
+    }]
+  }]
+}
