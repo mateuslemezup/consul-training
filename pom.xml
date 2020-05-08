@@ -21,6 +21,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>consul-training</name>
 	<description>Demo project for Spring Boot</description>
+	<url>https://github.com/mateuslemezup/consul-training</url>
+
+	<scm>
+		<url>https://github.com/mateuslemezup/consul-training</url>
+		<connection>scm:git:git@github.com:mateuslemezup/consul-training.git</connection>
+		<developerConnection>scm:git:git@github.com:mateuslemezup/consul-training.git</developerConnection>
+	</scm>
 
 	<properties>
 		<java.version>11</java.version>
@@ -77,6 +84,15 @@
 						<version>${kotlin.version}</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<tagNameFormat>@{project.version}</tagNameFormat>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
